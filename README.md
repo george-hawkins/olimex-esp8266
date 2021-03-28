@@ -1,6 +1,6 @@
 The [Olimex ESP8266](https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/open-source-hardware) is a nice board that's very easy to wire-up and use.
 
-Easy once you know how, that is. With a tiny little effort Olimex could have documented the initial setup on their product page.
+Easy once you know how, that is. With a little extra effort Olimex could have documented the initial setup on their product page.
 
 However, currently the most useful document there is the [schematic](https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/resources/MOD-WIFI-ESP8266-DEV_schematic.pdf) for the board.
 

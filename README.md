@@ -2,7 +2,7 @@ The [Olimex ESP8266](https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/op
 
 Easy once you know how, that is. With a little extra effort Olimex could have documented the initial setup on their product page.
 
-However, currently the most useful document there is the [schematic](https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/resources/MOD-WIFI-ESP8266-DEV_schematic.pdf) for the board.
+However, currently the most useful document there is the [schematic](https://github.com/OLIMEX/ESP8266/blob/master/HARDWARE/MOD-WIFI-ESP8266-DEV/MOD-WiFi-ESP8266-DEV%20revision%20B1/MOD-WiFi-ESP8266-DEV_Rev_B1.pdf) for the board.
 
 Pinout
 ------
@@ -34,13 +34,12 @@ PAD | PIN
 21  | GPIO0
 22  | GPIO4
 
-With the board oriented so the antennae is at the bottom edge, pins 1 to 11 run from the upper left to lower left and then pins 12 to 22 run from the the lower right to the upper right.
+With the board oriented so the antennae is at the bottom edge, pins 1 to 11 run from the upper left to lower left and then pins 12 to 22 run from the the lower right to the upper right. The five large pads, on the opposite edge to the antenna, are numbered 1 to 5 going right to left.
 
-The 5 pads on the upper edge are numbered 1 to 5 going right to left.
+It's important to be clear about the distinction between Olimex board pad numbers and the pin numbers of the ESP8266 chip. In the schematic linked to above you can see two things:
 
-Be clear about the distinction between Olimex board pad numbers and the pin numbers of the ESP8266 chip.
-
-In the schematic linked to above you can see both the pad numbers (as listed above) and the chip pin numbers, which run anti-clockwise around the chip from 1 to 32.
+* The chip at the center of the schematic with pin numbers, from 1 to 32, running anti-clockwise around the outside of the chip. For each pin _number_ there is a corresponding pin _name_ shown within the outline of the chip, e.g. pin 24 is `GPIO5`.
+* To the right there is the table that's reproduced above showing the mapping from chip pin _names_ to the board's pad _numbers_, e.g. `GPIO5` is broken out on pad 11 of the board.
 
 Serial cable
 ------------

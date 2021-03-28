@@ -44,7 +44,7 @@ It's important to be clear about the distinction between Olimex board pad number
 Serial cable
 ------------
 
-The ESP8266 is 3.3V - and this is the voltage supported by the [Olimex USB serial cable F](https://www.olimex.com/Products/Components/Cables/USB-Serial-Cable/USB-Serial-Cable-F/).
+The ESP8266 is 3.3V - and this is the voltage supported by the [Olimex USB serial cable F](https://www.olimex.com/Products/Components/Cables/USB-Serial-Cable/USB-SERIAL-F/).
 
 Sparkfun have a similar cable - the [USB to TTL serial cable](https://www.sparkfun.com/products/12977) (note that the VCC pin here, that the Olimex cable does not have, is not of much use as it, unlike the other pins, is 5V). They also have a surprisingly large range of variants on this theme - their [3.3V FTDI cable](https://www.sparkfun.com/products/9717) (that provides additional RTS and CTS pins), much the same thing as an [3.3V FTDI basic breakout](https://www.sparkfun.com/products/9873) (but with DTR rather than RTS), along with more sophisticated [FT231X](https://www.sparkfun.com/products/11736) and [FT232RL](https://www.sparkfun.com/products/12731) breakouts.
 
@@ -116,7 +116,7 @@ Setting up the Arduino IDE 1.6.4 or later for the ESP8266 is trivial for the Oli
 
 * https://github.com/esp8266/Arduino
 
-Just install the board manager as [described there](https://github.com/esp8266/Arduino#installing-with-boards-manager).
+Just install the board manager as [described there](https://arduino-esp8266.readthedocs.io/en/2.7.4_a/installing.html#boards-manager).
 
 Then under Tools / Board select the Olimex board from the ESP8266 Modules section.
 
@@ -147,7 +147,7 @@ In some desciptions, people mistakenly wire-up various external pull-up and pull
 
 The clearest description of what's required is seen here:
 
-* https://github.com/esp8266/Arduino#minimal-hardware-setup-for-bootloading-and-usage
+* https://arduino-esp8266.readthedocs.io/en/latest/boards.html#minimal-hardware-setup-for-bootloading-and-usage
 
 For the remainder of this section, I'll use the pin names used there. If you've already got the Olimex board connected to power and to a serial cable then nearly all of the required pins are already wired up correctly:
 
